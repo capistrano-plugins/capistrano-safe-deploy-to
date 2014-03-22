@@ -25,7 +25,7 @@ That is easy to fix, right? A quick:
 - `sudo mkdir -p /var/www/app_name`
 - `sudo chown deploy:deploy /var/www/app_name`
 
-Except that is painful, unnecessary and I refuse to manually `ssh` to the
+Except that is painful, unnecessary and there's no need to manually `ssh` to the
 server to deploy apps!
 
 There are other solutions to this problem (Chef, Ansible), but if you'd like to
@@ -54,6 +54,7 @@ There are no configuration options (thank God!)
 ### How it works
 
 `capistrano-safe-deploy-to` hooks to `before 'deploy:check'` task. It:
+
 1. creates s `deploy_to` directory with `sudo mkdir -p <your_deploy_dir>`
 2. gives proper ownership to deploy dir with
 `sudo chown <deploy_user>:<deploy_user_group> <your_deploy_dir>`
