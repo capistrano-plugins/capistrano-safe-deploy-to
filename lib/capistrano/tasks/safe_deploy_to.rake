@@ -28,3 +28,4 @@ namespace :safe_deploy_to do
 end
 
 before "deploy:check", "safe_deploy_to:ensure"
+before "setup", "safe_deploy_to:ensure"
