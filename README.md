@@ -62,6 +62,18 @@ There are no configuration options (thank God!)
 It's simple, but you don't have to do or think about it. Let the computers
 slave for you!
 
+### More Capistrano automation?
+
+If you'd like to streamline your Capistrano deploys, you might want to check
+these zero-configuration, plug-n-play plugins:
+
+- [capistrano-unicorn-nginx](https://github.com/bruno-/capistrano-unicorn-nginx)<br/>
+no-configuration unicorn and nginx setup with sensible defaults
+- [capistrano-postgresql](https://github.com/bruno-/capistrano-postgresql)<br/>
+plugin that automates postgresql configuration and setup
+- [capistrano-rbenv-install](https://github.com/bruno-/capistrano-rbenv-install)<br/>
+would you like Capistrano to install rubies for you?
+
 ### License
 
 [MIT](LICENSE.md)
