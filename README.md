@@ -60,7 +60,7 @@ There are no configuration options (thank God!)
 `sudo chown <deploy_user>:<deploy_user_group> <your_deploy_dir>`
 
 It's simple, but you don't have to do or think about it. Let the computers
-slave for you!
+work for you!
 
 ### More Capistrano automation?
 
