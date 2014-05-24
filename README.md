@@ -44,7 +44,7 @@ then:
 
 and then add to `Capfile`:
 
-    require 'capistrano/safe_deploy_to'
+    require 'capistrano-safe_deploy_to'
 
 And you're done. `$ bundle exec cap production deploy` should just work!
 (or at least it won't fail because directories don't exist).
