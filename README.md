@@ -36,7 +36,7 @@ solve it via Capistrano, read on.
 Install with:
 
     gem 'capistrano', '~> 3.1'
-    gem 'capistrano-safe-deploy-to', '~> 1.1'
+    gem 'capistrano-safe-deploy-to', '~> 1.1.1'
 
 then:
 
