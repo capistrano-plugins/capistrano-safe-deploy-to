@@ -1,7 +1,7 @@
 namespace :load do
   task :defaults do
     set :safe_deploy_to_owner, nil
-    set :safe_deploy_to_path, -> { fetch(:deploy_to) }
+    set :safe_deploy_to_path, -> { deploy_path }
   end
 end
 
