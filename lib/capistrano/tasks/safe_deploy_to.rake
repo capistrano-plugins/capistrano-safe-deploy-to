@@ -7,13 +7,13 @@ end
 
 namespace :safe_deploy_to do
   task :create do
-    on roles :all do
+    on release_roles(:all) do
       sudo :mkdir, '-pv', fetch(:safe_deploy_to_path)
     end
   end
 
   task ensure_owner: [:create] do
-    on roles :all do
+    on release_roles(:all) do
       unless fetch(:safe_deploy_to_owner)
         user = capture :id, '-un'
         group = capture :id, '-gn'
